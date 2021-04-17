@@ -16,11 +16,6 @@ module spi_top #(parameter WIDTH=8,
   wire mosi_w;
   wire miso_w;
   wire master_ready_w;
-  
-   initial begin
-    $dumpfile("dump.vcd");
-    $dumpvars(1, spi_top);
-  end
 
   spi_master #(.WIDTH(WIDTH)) master_device
   (
